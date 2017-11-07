@@ -1,7 +1,178 @@
+
 <!DOCTYPE html>
-<html>
+<html lang="en">
+<head>
+	<title>Biomass Willow Planting Stock For Sale Ireland</title>
+	<meta charset="utf-8"> 
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.2/TweenMax.min.js"></script>
+	<style>
+		p {
+			font: 1.5em "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", sans-serif;
+			display: block;
+			margin-top: 1em;
+			margin-bottom: 1em;
+			margin-left: 1em;
+			margin-right: 1em;
+			text-align: left;
+			line-height: 2em;
+		}
+		
+		li {
+			font: 1.5em "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", sans-serif;
+			margin-top: 1em;
+			margin-bottom: 1em;
+			margin-left: 1em;
+			margin-right: 1em;
+			line-height: 2em;
+		}
+		
+		h1 {
+			font: 3.5em "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", sans-serif;
+		}
+		
+		h4 {
+			font: 1.5em "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", sans-serif;
+		}
+		
+		h5 {
+			font: 1.1em "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", sans-serif;
+		}
+		
+		#a1 {
+			margin-top: 50vh;
+			margin-bottom: 50vh;
+			border-radius: 500px;
+			font: 4em "Comic Sans MS", cursive, sans-serif;
+			background: radial-gradient(rgba(0,0,0,0), rgba(0,0,0,0), rgba(0,0,0,0), rgba(0,255,0,0.75), rgba(0,0,0,0), rgba(0,0,0,0), rgba(0,0,0,0));
+			background-repeat: no-repeat;
+			background-position:50% 50%;
+			background-size:100%;
+			letter-spacing:1px;
+			color: white;
+			padding: 300px 25px;
+			text-align: center;
+			text-decoration: none;
+			display: inline-block;
+			color: #FF00FF;
+			text-shadow: 5px 3px 5px #7FFFD4;
+		}
+		
+		body {
+			background: linear-gradient(white, white, white, white, white, white, white, white, red, red)
+		}
+		
+		#cont {
+			margin-top: 1000%;
+			background: radial-gradient(blue, purple, red, red, red)
+		}
+	</style>
+</head>
+  
 <body>
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages.</p>
+	<div class="container">
+	
+    <div class="well">
+		<div class="text-center">
+			<h1>Biomass Willow Planting Stock For Sale</h1>
+			<h5>Grown in Country Clare Ireland for the Past 20 Years</h5> 
+		</div>
+	</div>
+	
+	<div class="row">
+		<div class="col-sm-3">
+		<div class="list-group">
+		<a id="Item1" href="#" class="list-group-item active" onclick="ChangePage(1)"><h4>Information</h4></li>
+		<a id="Item2" href="#" class="list-group-item" onclick="ChangePage(2)"><h4>Pictures</h4></a>
+		<a id="Item3" href="#" class="list-group-item" onclick="ChangePage(3)"><h4>Planting Tutorial</h4></a>
+		<a id="Item4" href="#" class="list-group-item" onclick="ChangePage(4)"><h4>Contact</h4></a>
+		</div>
+		</div>
+		
+		<div class="col-sm-9">
+		<div class="show" id="Page1">
+		<ul>
+			<li>Vilminalis and Stott Varieties Grows up to 12ft per year</li>
+			<li>Available for collection or can be posted </li>
+			<li>Cost per length: €3/6ft(1.8m) or €2/4ft(1.2m) </li>
+			<li>The stock will be cut as required from the start of November until the end of February </li>
+			<li>We are happy to process small orders </li>
+			<li>Payment: Cash on collection, Paypal or Bank Transfer </li>
+		</ul>
+		</div>
+		</div>
+		
+		<div class="col-sm-9">
+		<div class="hidden" id="Page2">
+		</div>
+		</div>
+		
+		<div class="col-sm-9">
+		<div class="hidden" id="Page3">
+		</div>
+		</div>
+		
+		<div class="col-sm-9">
+		<div class="hidden" id="Page4">
+		<p>
+		Email: kimpierce1958@gmail.com <br>
+		Call/Text: 086-0422415 <br>
+		We're located 5 minutes outside Scarriff
+		</P>
+		<iframe
+			  width="600"
+			  height="450"
+			  frameborder="0" style="border:0"
+			  src="https://www.google.com/maps/embed/v1/place?key=AIzaSyC0Nas7I0X6GHyCVK3CQr-kJ3CnVkB6NOI
+					&q=Ballyminoge, Scarriff, Co. Clare, Ireland" allowfullscreen>
+		</iframe>
+		</div>
+		</div>
+	</div>
+	</div>
+	<div id="cont" class="text-center">
+	<a id="a1" href="hyperwillow.html">sTeP oN tHe WiLd SiDe</a>
+	</div>
+	
+	
+	
+	
+	<script>
+	window.onload = function(){
+		var THE_button = document.getElementById("a1");
+		var text_tl = new TimelineMax({repeat:-1, yoyo:true});
+		text_tl.add( TweenMax.to(THE_button, 1, {transform:rotateY(130deg)}) );
+		text_tl.play();
+		TweenMax.to(THE_button, 3, {
+			backgroundSize:"50%", 
+			repeat:-1, 
+			yoyo:true,
+			ease: Back.easeInOut.config(1.4)
+			});
+		TweenMax.to(THE_button, 1, {
+			textShadow:"0px 0px 99px #7FFFD4", 
+			repeat:-1, 
+			yoyo:true,
+			ease:Circ.easeInOut,
+			repeatDelay:2
+			});
+		
+		
+	}
+	function ChangePage(a) {
+		for (i = 1; i < 5; i++) {
+			document.getElementById("Item" + i).className = "list-group-item";
+			document.getElementById("Page" + i).className = "hidden";
+		}
+		document.getElementById("Item" + a).className = "list-group-item active";
+		document.getElementById("Page" + a).className = "show";
+		return;
+	}
+	</script>
 </body>
 </html>
+
+<!--TweenLite.to( [target object], [duration in seconds], [destination values] )-->
