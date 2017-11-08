@@ -6,6 +6,7 @@
 	<meta charset="utf-8"> 
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Spicy Rice">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.2/TweenMax.min.js"></script>
@@ -46,7 +47,8 @@
 			margin-top: 50vh;
 			margin-bottom: 50vh;
 			border-radius: 500px;
-			font: 4em "Comic Sans MS", cursive, sans-serif;
+			font-size: 5em;
+			font-family: "spicy Rice";
 			background: radial-gradient(rgba(0,0,0,0), rgba(0,0,0,0), rgba(0,0,0,0), rgba(0,255,0,0.75), rgba(0,0,0,0), rgba(0,0,0,0), rgba(0,0,0,0));
 			background-repeat: no-repeat;
 			background-position:50% 50%;
@@ -62,12 +64,17 @@
 		}
 		
 		body {
-			background: linear-gradient(white, white, white, white, white, white, white, white, red, red)
+			background: white
 		}
 		
 		#cont {
 			margin-top: 1000%;
 			background: radial-gradient(blue, purple, red, red, red)
+		}
+		#secret {
+			text-decoration:none;
+			color:inherit;
+			cursor:text;
 		}
 	</style>
 </head>
@@ -78,7 +85,7 @@
     <div class="well">
 		<div class="text-center">
 			<h1>Biomass Willow Planting Stock For Sale</h1>
-			<h5>Grown in Country Clare Ireland for the Past 20 Years</h5> 
+			<h5>Grown in Country Clare Ireland f<a id="secret" onclick="ShowSecret()">o</a>r the Past 20 Years</h5> 
 		</div>
 	</div>
 	
@@ -133,7 +140,7 @@
 		</div>
 	</div>
 	</div>
-	<div id="cont" class="text-center">
+	<div id="cont" class="hidden">
 	<a id="a1" href="hyperwillow.html">sTeP oN tHe WiLd SiDe</a>
 	</div>
 	
@@ -143,7 +150,12 @@
 	<script>
 	window.onload = function(){
 		var THE_button = document.getElementById("a1");
-		var text_tl = new TimelineMax({repeat:-1, yoyo:true});
+		TweenMax.to(THE_button, 3, {
+			rotationY:360,
+			yoyo:true,
+			repeat:-1,
+			repeatDelay:5,
+			});
 		TweenMax.to(THE_button, 3, {
 			backgroundSize:"50%", 
 			repeat:-1, 
@@ -157,8 +169,6 @@
 			ease:Circ.easeInOut,
 			repeatDelay:2
 			});
-		
-		
 	}
 	function ChangePage(a) {
 		for (i = 1; i < 5; i++) {
@@ -167,7 +177,10 @@
 		}
 		document.getElementById("Item" + a).className = "list-group-item active";
 		document.getElementById("Page" + a).className = "show";
-		return;
+	}
+	function ShowSecret() {
+		document.getElementById("cont").className = "text-center";
+		document.body.style.background = "linear-gradient(white, white, white, white, white, white, white, white, red, red)";
 	}
 	</script>
 </body>
